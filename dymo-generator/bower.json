@@ -1,0 +1,10 @@
+{
+  "name": "dymo-generator-tests",
+  "private": "true",
+  "dependencies": {
+    "dymo-generator": "*",
+   "mathjs": "*",
+    "n3": "n3js#*"
+  }
+}
+

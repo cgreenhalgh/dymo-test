@@ -1,0 +1,73 @@
+{
+"file_metadata": {
+  "jams_version": "0.2.0",
+  "identifiers": { "filename": "Stella.wav" },
+  "duration": 195.027687074
+},
+"annotations": [
+{
+  "namespace": "unknown",
+  "annotation_metadata": {
+    "annotation_tools": "Sonic Annotator v1.4",
+    "data_source": "Automatic feature extraction",
+    "annotator": {
+      "plugin_id": "vamp:qm-vamp-plugins:qm-tempotracker",
+      "output_id": "tempo",
+      "plugin_version": "6",
+      "step_size": 512,
+      "block_size": 1024,
+      "sample_rate": 44100,
+      "parameters": {
+        "alpha": 0.89999998,
+        "constraintempo": 0,
+        "dftype": 3,
+        "inputtempo": 120,
+        "method": 1,
+        "whiten": 0
+      },
+      "transform_id": "vamp:qm-vamp-plugins:qm-tempotracker:tempo"
+    }
+  },
+  "data": [
+    { "time": 0.000000000, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 2.972154195, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 10.402539682, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 11.888616780, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 14.860770975, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 29.721541950, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 35.665850340, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 37.151927437, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 40.124081632, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 41.610158730, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 50.526621315, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 53.498775510, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 59.443083900, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 69.845623582, "duration": 0.0, "confidence": 1.0, "label": "120.19 bpm", "value": 120.185 },
+    { "time": 71.331700680, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 72.817777777, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 74.303854875, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 75.789931972, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 77.276009070, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 84.706394557, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 86.192471655, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 89.164625850, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 93.622857142, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 118.886167800, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 120.372244897, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 130.774784580, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 135.233015873, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 136.719092970, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 138.205170068, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 139.691247165, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 144.149478458, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 147.121632653, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 148.607709750, "duration": 0.0, "confidence": 1.0, "label": "172.27 bpm", "value": 172.266 },
+    { "time": 154.552018140, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 161.982403628, "duration": 0.0, "confidence": 1.0, "label": "114.84 bpm", "value": 114.844 },
+    { "time": 179.815328798, "duration": 0.0, "confidence": 1.0, "label": "112.35 bpm", "value": 112.347 },
+    { "time": 181.301405895, "duration": 0.0, "confidence": 1.0, "label": "109.96 bpm", "value": 109.957 },
+    { "time": 182.787482993, "duration": 0.0, "confidence": 1.0, "label": "105.47 bpm", "value": 105.469 }
+  ]
+}
+]
+}
