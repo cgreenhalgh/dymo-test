@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "n3": "^0.4.5",
     "xmlhttprequest": "^1.8.0"
   }
 }
