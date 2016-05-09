@@ -12,6 +12,8 @@ var loader = new FeatureLoader();
 // JSON
 //var barbeat =JSON.parse(fs.readFileSync('Stella_vamp_qm-vamp-plugins_qm-barbeattracker_beats.json'));
 //var tempo = JSON.parse(fs.readFileSync('Stella_vamp_qm-vamp-plugins_qm-tempotracker_tempo.json'));
+// Note: MFCC is only one produces af:value
+//var mfcc = JSON.parse(fs.readFileSync('Stella_vamp_qm-vamp-plugins_qm-mfcc_coefficients.json'));
 var source = 'Stella.wav'
 
 //var json = tempo; //barbeat;
@@ -20,19 +22,22 @@ var source = 'Stella.wav'
 //console.log('output_id: '+json[Object.keys(json)[1]][0].annotation_metadata.annotator.output_id);
 
 // RDF
-var barbeat = "file:///Stella_vamp_qm-vamp-plugins_qm-barbeattracker_beats.n3";
-var tempo = "file:///Stella_vamp_qm-vamp-plugins_qm-tempotracker_tempo.n3";
-
+var barbeat = "file:///home/vagrant/dymo-test/dymo-generator/Stella_vamp_qm-vamp-plugins_qm-barbeattracker_beats.n3";
+var tempo = "file:///home/vagrant/dymo-test/dymo-generator/Stella_vamp_qm-vamp-plugins_qm-tempotracker_tempo.n3";
+var mfcc = "file:///home/vagrant/dymo-test/dymo-generator/Stella_vamp_qm-vamp-plugins_qm-mfcc_coefficients.n3";//"http://www.cs.nott.ac.uk/~pszcmg/Music/Stella_vamp_qm-vamp-plugins_qm-mfcc_coefficients.n3";
 
 var generator = new DymoGenerator(undefined, function(){});
 
 generator.setCondensationMode(MEAN);
 
+//generator.addDymo(undefined,source);
+
 //loader.loadFeature(barbeat, undefined, generator, function() { console.log('loaded barbeat'); });
+//loader.loadFeature(mfcc, undefined, generator, function() { console.log('loaded mfcc'); });
 
 //if (false) 
-DymoTemplates.createAnnotatedBarAndBeatDymo(generator, [barbeat/*, tempo*/], function() {
+DymoTemplates.createAnnotatedBarAndBeatDymo(generator, [barbeat, mfcc, tempo], function() {
 	var dymo = generator.getDymo();
 	dymo.setSourcePath(source);
-	fs.writeFile('dymo.json', JSON.stringify(dymo.toJsonHierarchy()));
+	fs.writeFile('dymo.json', JSON.stringify(dymo.toJsonHierarchy(), null, 4));
 });
