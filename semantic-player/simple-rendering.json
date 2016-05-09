@@ -1,0 +1,17 @@
+{
+	"@context":"http://tiny.cc/dymo-context",
+	"@id":"simpleRendering",
+	"@type":"Rendering",
+	"dymo":"simple",
+	"mappings":[
+		{
+			"domainDims":[{
+				"name":"z",
+				"type":"AccelerometerZ",
+				"value":0
+			}],
+			"dymos":["simple"],
+			"parameter":"Amplitude"
+		}
+	]
+}

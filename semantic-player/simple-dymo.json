@@ -1,0 +1,18 @@
+{
+	"@context":"http://tiny.cc/dymo-context",
+	"@id":"simple",
+	"@type":"Dymo",
+	"ct":"parallel",
+	"parts":[
+		{
+			"@id":"piano",
+			"@type":"Dymo",
+			"parts":[],
+			"source":"piano.m4a",
+			"Loop":{"value":1,"type":"Parameter"},
+			"Amplitude":{"value":0.2,"type":"Parameter"},
+			"Reverb":{"value":0.2,"type":"Parameter"},
+			"PlaybackRate":{"value":1,"type":"Parameter"}
+		}
+	]
+}

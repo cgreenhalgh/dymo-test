@@ -29,3 +29,5 @@ Nominally you can also use [dymo-generator](https://github.com/florianthalmann/d
 It will attempt to load all audio at the start of execution. This disables the dymo-core support for on-demand loading from the proprietary [audio server](https://github.com/florianthalmann/audio-server) (which would probably only work with WAV files).
 
 WebAudio support on lots of Android default browsers is poor/non-existing, so especially on devices before Android 5 you will need to use the alternative crosswalk browser (supported by ionic).
+
+Doesn't seem to create sensor watchers in current code base. So no sensor input. No apparaent sensor permissions, either. Not sure what is going on.

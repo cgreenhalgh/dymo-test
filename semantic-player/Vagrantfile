@@ -65,6 +65,8 @@ Vagrant.configure(2) do |config|
     ionic browser add crosswalk
     # undo: ionic browser revert android
 
+    # plugins or permissions for sensors...??
+
     # ionic resources doesn't work at the moment?!
     # I wonder if i need to log into ionic
     ionic resources
