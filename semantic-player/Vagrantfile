@@ -3,6 +3,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provider "virtualbox" do |v|
     v.memory = 1024
+    v.gui = true
 
   end
 
@@ -20,7 +21,8 @@ Vagrant.configure(2) do |config|
 
     # ionic and related pre-reqs
     sudo npm install -g bower
-    sudo npm install -g cordova
+    # problem with cordova 6.1 vs ionic as of 2016-06-15
+    sudo npm install -g cordova@6.0.x
     sudo npm install -g ionic
 
     # bower deps
@@ -36,7 +38,7 @@ Vagrant.configure(2) do |config|
     # ionic android needs Java...
     sudo add-apt-repository -y ppa:webupd8team/java
     sudo apt-get update
-    echo 'do:\nsudo apt-get install -y oracle-java7-installer' 
+    echo 'do:\nsudo apt-get install -y oracle-java8-installer' 
 
     # cordova android needs android sdk
     cd
