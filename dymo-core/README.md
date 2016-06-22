@@ -32,7 +32,7 @@ Some Parameters are applied via the listener model (in the audio Scheduler): Dis
 
 There is a Loop parameter that applies to atomic dymos, but it is not clear if it applies to compound dymos.
 
-There is a Play parameter, but its exact operation is unconfirmed. There is some suggestion that it may pause/resume an atomic dymo but stop/restart a compound dymo. It is unclear how changing Play on a sub-dymo means.
+There is a Play parameter. As of 2016-06-15 setting play on a dymo (at any level) creates a new thread to play that dymo independently from the beginning. Setting play to false immediately stops the play thread. (The semantic player normally sets play only on the top-level dymo.)
 
 The full dymo hierarchy is typically static (only Parameters change during execution).
 
@@ -46,5 +46,5 @@ The default navigator is a "sequential" navigator, although this will play child
 
 Thus there are two largely orthogonal mechanisms: playing (stepping through) the dymo, under the control of the navigator(s), and dynamically modifying that playback, primarily by changes to Amplitude and perhaps Playback Ratio and/or Duration Ratio (which affect the time taken by each atomic dymo).
 
-It is currently unclear to me exactly how changes to Play are handled, e.g. in compound vs atomic dymos, and how to handle pause/resume to stop/restart.
+Setting/clearing the play parameter creates/destroys independent play threads, creating a further level of course-grained control.
   

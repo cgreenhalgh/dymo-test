@@ -60,4 +60,4 @@ It will attempt to load all audio at the start of execution. This disables the d
 
 WebAudio support on lots of Android default browsers is poor/non-existing, so especially on devices before Android 5 you will need to use the alternative crosswalk browser (supported by ionic).
 
-Doesn't seem to create sensor watchers in current code base. So no sensor input. No apparaent sensor permissions, either. Not sure what is going on.
+Currently glitchy audio playout on a galaxy nexus 4.3.1 using crosswalk. Perhaps increase `SCHEDULE_AHEAD_TIME` in `src/globals.js`?
