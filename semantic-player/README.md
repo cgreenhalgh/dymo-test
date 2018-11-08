@@ -1,30 +1,59 @@
 # Semantic Player
 
-Stuff to do with QM Semantic Player, [github](https://github.com/florianthalmann/semantic-player)...
+Stuff to do with QM Semantic Player, [github](https://github.com/dynamic-music/semantic-player)...
 
-Chris Greenhalgh, The University of Nottingham, 2016
+Chris Greenhalgh, The University of Nottingham, 2016-2018
+
+In progress of updating, Nov. 2018...
 
 ## Install
 
 - [Vagrantfile](Vagrantfile) for creating suitable Ubuntu-based build environment. Note that manual steps are required for Android (Java and Android SDK).
 
-(cordova 6.1 incompatibility with ionic as of 2016-06-15)
-
 ```
-git clone https://github.com/florianthalmann/semantic-player.git
+git clone https://github.com/dynamic-music/semantic-player.git
 cd semantic-player
 
-sudo npm install -g cordova@6.0.x
-sudo npm install -g bower
-sudo npm install -g ionic
+sudo npm install -g cordova ionic
 
 npm install
-bower install
-ionic resources
+#ionic resources
+```
+
+Make dymos - undocumented
+```
+cd generator
+`npm bin`/tsc
+cd ..
+mkdir src/assets/dymos
+node generator/lib/example-dymos.js
+```
+
+Local web:
+```
 ionic serve  --address 0.0.0.0
-ionic browser add crosswalk
-ionic add platform android
-ionic build android
+```
+Open browser at http://localhost:8100
+
+Error:
+```
+Error while trying to use the following icon from the Manifest: http://localhost:8100/assets/imgs/logo.png (Download error or resource isn't a valid image)
+tone-object.js:93 Tone.Buffer: could not locate file: assets/dymos/loop/loop.wav
+tone-object.js:93 Tone.Buffer: could not locate file: assets/dymos/example/creak.wav
+```
+This is the first dymo listed in [src/assets/config.json](https://github.com/dynamic-music/semantic-player/blob/master/src/assets/config.json), and there's no sign of it in the git repo.
+
+Looks like they are made by something in `generator/`, which needs tsc
+
+Stop here for now...
+
+## More old stuff to work through
+
+Android - also needs lots of other local deps:
+```
+#ionic browser add crosswalk
+#ionic add platform android
+#ionic build android
 ```
 if ionic resources fails...
 ```
